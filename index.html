@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <script src="./src/scripts/main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="meteo">
+      <div class="top">
+        <img src="./src/images/icon.png" alt="" />
+      </div>
+
+      <div class="mid">
+        <div class="cityname"><span id="cname"></span></div>
+        <div class="temp"><span id="temp"></span></div>
+
+        <div class="moreinfos">
+          <div class="info">
+            <div class="icon">
+              <img src="./src/images/ressenti.png" alt="" />
+            </div>
+            <div class="data" id="temp2"></div>
+          </div>
+          <div class="info">
+            <div class="icon"><img src="./src/images/vent.png" alt="" /></div>
+            <div class="data" id="vent"></div>
+          </div>
+          <div class="info">
+            <div class="icon"><img src="./src/images/visi.png" alt="" /></div>
+            <div class="data" id="visi"></div>
+          </div>
+          <div class="info">
+            <div class="icon"><img src="./src/images/humi.png" alt="" /></div>
+            <div class="data" id="humi"></div>
+          </div>
+        </div>
+      </div>
+
+      <form class="bottom" id="form">
+        <input
+          type="text"
+          placeholder="Ville"
+          id="ville"
+          name="ville"
+          autocomplete="non"
+        />
+        <button class="button-21" id="valider">Valider</button>
+      </form>
+    </div>
+  </body>
+</html>

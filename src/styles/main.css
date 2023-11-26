@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("chemin/vers/BebasNeue-Regular.ttf") format("truetype"); /* Spécifiez le chemin correct */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue", sans-serif;
+  overflow: hidden;
+  font-weight: bolder;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.meteo {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.meteo .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3eb2fd;
+  border-radius: 5% 5% 50% 50%;
+
+  background-image: linear-gradient(1deg, #4f58fd, #149bf3 99%);
+  height: 20%;
+  width: 100%;
+}
+
+.meteo .mid {
+  height: 70%;
+
+  width: 100%;
+}
+.meteo .mid .cityname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  height: 25%;
+}
+.meteo .mid .temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+  height: 25%;
+}
+
+.meteo .mid .moreinfos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+
+.meteo .mid .moreinfos .info {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 100px;
+  border-radius: 0% 50% 0% 35%;
+  background-color: #3eb2fd;
+  background-image: linear-gradient(1deg, #4f58fd, #149bf3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+}
+
+.meteo .mid .moreinfos .info .icon img {
+  max-width: 42px;
+}
+
+.meteo .mid .moreinfos .info .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+.meteo .mid .moreinfos .info .data {
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  font-size: 19px;
+  height: 50%;
+  width: 100%;
+}
+
+.meteo .top img {
+  max-width: 90px;
+}
+
+.meteo .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 10%;
+  width: 100%;
+}
+
+.meteo .bottom input[type="text"] {
+  width: 70%;
+  border: 1px solid #e6e6e6;
+  padding: 12px 20px;
+  border-radius: 50px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.meteo .bottom .button-21 {
+  align-items: center;
+  appearance: none;
+  background-color: #3eb2fd;
+  background-image: linear-gradient(1deg, #4f58fd, #149bf3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd, sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s, background-position 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button-21:active,
+.button-21:focus {
+  outline: none;
+}
+
+.button-21:hover {
+  background-position: -20px -20px;
+}
+
+.button-21:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 0.125em;
+}
